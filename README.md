@@ -14,10 +14,10 @@ Use [vue-devtools](https://github.com/vuejs/vue-devtools) if you want a see how 
 
 ### How promotions work
 
-- 30% OFF should reduce 30% of the costs on **subtotal**.
-- $100.00 Discout should reduce $100.00 of **total**.
-- Free Shipping should set **shipping** to zero.
-- +$100.00 on limit should increase user **limit** by $100.00.
+- 30% OFF should reduce 30% of the costs on **subtotal**
+- $100.00 Discount should reduce $100.00 of **total**
+- Free Shipping sets **shipping** to zero
+- Dummy user has a spending limit implemented (800 by default, can be increased; only for testing)
 
 ### We have 3 resources:
 

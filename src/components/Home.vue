@@ -28,9 +28,12 @@ div.main
             h1= title
           div.icon
             img(src='./../assets/right-chevron.svg')
-    +category-card("The Story", "I'd like to know", "/")
-    +category-card("Products", "I'm into your", "/shop")
+    +category-card("The Story", "I'd like to know")
+      router-link(to="/" tag="a" class="hidden-links")/
+    +category-card("Products", "I'm into your")
+      router-link(to="/commerce" tag="a" class="hidden-links")/
     +category-card("360 Tours", "Just wanna have some fun in your")
+      router-link(to="/" tag="a" class="hidden-links")
     //- +category-card('Frequently Asked Questions', 'More answers in', "/faq")
 </template>
 <script>
@@ -91,10 +94,6 @@ div.main
     z-index 10
     margin 10em 0 0
     width 100%
-    // .row
-    //   display flex
-    //   justify-content flex-start
-    //   padding-left 5%
   .card-cat
     color #fff
     width 30%
@@ -123,6 +122,10 @@ div.main
       font-weight 100
       max-width 85%
       font-family 'Raleway'
+    .hidden-links
+      position absolute
+      width 100%
+      height 100%
     div.icon
       position absolute
       height 100%
@@ -140,7 +143,6 @@ div.main
         background -webkit-linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)
         background -ms-linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)
         background -o-linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)
-
         // background linear-gradient(45deg, rgba(242,216,69,1) 0%, rgba(242,216,69,1) 7%, rgba(4,148,196,1) 46%, rgba(66,63,112,1) 100%)
       &:nth-of-type(2)
         margin-right 1em
@@ -151,7 +153,6 @@ div.main
         background -moz-linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%)
         backgorund -o-linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%)
         background -ms-linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%)
-        
         // background linear-gradient(to right, rgba(254,182,69,1) 0%, rgba(254,182,69,1) 3%, rgba(254,182,69,1) 22%, rgba(242,216,69,1) 51%, rgba(241,231,103,1) 99%, rgba(241,231,103,1) 100%)
       &:nth-of-type(3)
         background -moz-linear-gradient(to right, rgba(254,182,69,1) 0%, rgba(254,182,69,1) 3%, rgba(254,182,69,1) 22%, rgba(242,216,69,1) 51%, rgba(241,231,103,1) 99%, rgba(241,231,103,1) 100%)

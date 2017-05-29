@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Resource from 'vue-resource'
-// import Vuex from 'vuex'
+import Vuex from 'vuex'
 import VueCarousel from 'vue-carousel'
 
 import accounting from 'accounting'
@@ -15,7 +15,7 @@ import store from './store/index.js'
 Vue.use(VueRouter)
 Vue.use(Resource)
 Vue.use(VueCarousel)
-// Vue.use(Vuex)
+Vue.use(Vuex)
 Vue.filter('formatMoney', accounting.formatMoney)
 Vue.filter('pluralize', pluralize)
 
