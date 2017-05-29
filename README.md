@@ -1,12 +1,8 @@
-# Shop-vue
+# nyxl shop
 
-It's just a shopping cart experiment using Vue.js.
+- not yet deployed.
 
-- [See it live!](http://matheusazzi.com/shopping-cart/)
-
-This project is built with [vue-cli](https://github.com/vuejs/vue-cli) and [vuex](https://github.com/vuejs/vuex).
-
-Also I suggest you to use [vue-devtools](https://github.com/vuejs/vue-devtools) if you want a see how everything happens.
+Use [vue-devtools](https://github.com/vuejs/vue-devtools) if you want a see how everything happens.
 
 ### How cart works
 
@@ -37,17 +33,6 @@ Also I suggest you to use [vue-devtools](https://github.com/vuejs/vue-devtools) 
 
 ##### Products
 
-```js
-{
-  'id': 1,
-  'title': 'iPad 4 Mini',
-  'price': 500.01,
-  'inventory': 2,
-  'shipping': 15.00
-},
-...
-```
-
 ##### Promotions
 
 ```js
@@ -63,11 +48,13 @@ Also I suggest you to use [vue-devtools](https://github.com/vuejs/vue-devtools) 
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve at localhost:8080 (hot-reload)
 npm run dev
 
-# build for production with minification
+# build + minify for production
 npm run build
+
+
 
 # run unit tests
 npm run unit
@@ -78,5 +65,3 @@ npm run e2e
 # run all tests
 npm test
 ```
-
-This project uses [vue-cli](https://github.com/vuejs/vue-cli). For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="shopping-cart">
     <h3>Cart</h3>
 
     <shopping-cart-item
@@ -43,3 +43,19 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+  .shopping-cart
+    position fixed
+    right 3em
+    bottom 5em
+    background #fff
+    padding 1.5em
+    border-radius 6px
+    -webkit-box-shadow -1px 6px 5px 0px rgba(0,0,0,0.75)
+    -moz-box-shadow -1px 6px 5px 0px rgba(0,0,0,0.75)
+    box-shadow -1px 6px 5px 0px rgba(0,0,0,0.75)
+    opacity .75
+    &:hover
+      opacity 1
+</style>

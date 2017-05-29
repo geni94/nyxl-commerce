@@ -1,16 +1,9 @@
-<template>
-  <div>
-    <h3>Products</h3>
-
-    <div class="row" v-for="row in productRows">
-      <div class="col-sm-4" v-for="product in row">
-        <product
-          :product="product"
-          track-by="id">
-        </product>
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+  div
+    h3 Our Products
+    div(class="row" v-for="row in productRows")
+      div(class="col-sm-6" v-for="product in row")
+        product(:product="product" track-by="id")
 </template>
 
 <script>
@@ -20,7 +13,7 @@ import chunk from 'chunk'
 
 export default {
   computed: mapState({
-    productRows: state => chunk(state.products.all, 3)
+    productRows: state => chunk(state.products.all, 2)
   }),
   methods: mapActions([
     'getProducts'
@@ -31,3 +24,8 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+  .row
+    padding 1em 0
+</style>

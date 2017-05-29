@@ -1,6 +1,6 @@
 <template>
   <div class="mt-2">
-    <h3>Promotions</h3>
+    <h3>Coupons</h3>
 
     <toggle
       :data="coupon"

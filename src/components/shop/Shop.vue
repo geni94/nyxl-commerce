@@ -1,36 +1,27 @@
-<template>
-  <div>
-    <page-header></page-header>
-
-    <div class="container">
-      <coupons></coupons>
-
-      <div class="row mt-2">
-        <div class="col-sm-9">
-          <product-list></product-list>
-        </div>
-        <div class="col-sm-3">
-          <shopping-cart></shopping-cart>
-        </div>
-      </div>
-    </div>
-
-  </div>
+<template lang="pug">
+  div(class="container shop-container")
+    div(class="row mt-2")
+      div.col-sm-12
+        ProductList/
+        ShoppingCart/
+        Coupons/
 </template>
 
 <script>
-import PageHeader from './../shared/PageHeader'
-import Coupons from './Coupons'
 import ProductList from './products/ProductList'
 import ShoppingCart from './shopping-cart/ShoppingCart'
-
+import Coupons from './Coupons.vue'
 export default {
-  name: 'shop',
+  name: 'Shop',
   components: {
-    PageHeader,
-    Coupons,
     ProductList,
-    ShoppingCart
+    ShoppingCart,
+    Coupons
   }
 }
 </script>
+
+<style lang="stylus">
+  .shop-container
+    padding-top 8em
+</style>
