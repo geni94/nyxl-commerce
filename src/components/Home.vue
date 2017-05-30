@@ -161,6 +161,6 @@ div.main
         background -o-linear-gradient(to right, rgba(254,182,69,1) 0%, rgba(254,182,69,1) 3%, rgba(254,182,69,1) 22%, rgba(242,216,69,1) 51%, rgba(241,231,103,1) 99%, rgba(241,231,103,1) 100%)
         background -ms-linear-gradient(to right, rgba(254,182,69,1) 0%, rgba(254,182,69,1) 3%, rgba(254,182,69,1) 22%, rgba(242,216,69,1) 51%, rgba(241,231,103,1) 99%, rgba(241,231,103,1) 100%)
         background linear-gradient(to right, rgba(254,182,69,1) 0%, rgba(254,182,69,1) 3%, rgba(254,182,69,1) 22%, rgba(242,216,69,1) 51%, rgba(241,231,103,1) 99%, rgba(241,231,103,1) 100%)
-        h1
-          font-size 2.5rem
+        // h1
+        //   font-size 2.5rem
 </style>
